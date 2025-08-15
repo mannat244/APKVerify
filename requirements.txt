@@ -1,3 +1,4 @@
 streamlit
 apkfile
 google-play-scraper
+apk-sig-parser
