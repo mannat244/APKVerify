@@ -112,9 +112,7 @@ if uploaded_file:
         st.success(f"Successfully uploaded and processing `{uploaded_file.name}`...")
         try:
             # IMPORTANT: Update this path to where aapt.exe is on your system
-            aapt_executable_path = r"C:\Users\manna\AppData\Local\Android\Sdk\build-tools\35.0.0\aapt.exe"
-            apk_file = ApkFile(path=temp_path, aapt_path=aapt_executable_path)
-            
+            apk_file = ApkFile(path=temp_path, aapt_path="aapt")            
             # Use the reliable dictionary method to extract details
             details_dict = apk_file.as_dict()
 
